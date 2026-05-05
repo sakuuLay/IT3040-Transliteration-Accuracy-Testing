@@ -1,0 +1,15 @@
+{
+  "name": "transliteration-accuracy-testing",
+  "version": "1.0.0",
+  "description": "Playwright tests for Singlish→Sinhala transliteration accuracy",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:report": "npx playwright show-report",
+    "prepare": "npx playwright install"
+  },
+  "devDependencies": {
+    "exceljs": "^4.3.0",
+    "playwright": "^1.43.0"
+  }
+}

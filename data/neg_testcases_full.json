@@ -1,0 +1,450 @@
+[
+  {
+    "tcid": "Neg_0001",
+    "length": "S",
+    "input": "oya kohomada",
+    "expected": "ඔයා කොහොමද?",
+    "actual": "ඔයා කොහොමද",
+    "type": "Question forms",
+    "rationale": "Missing question mark"
+  },
+  {
+    "tcid": "Neg_0002",
+    "length": "S",
+    "input": "kohomada oyage name",
+    "expected": "ඔයාගේ නම කොහොමද?",
+    "actual": "ඔයාගේ නම කොහොමද",
+    "type": "Question forms",
+    "rationale": "Missing punctuation and wrong word order handling"
+  },
+  {
+    "tcid": "Neg_0003",
+    "length": "S",
+    "input": "help me",
+    "expected": "උදව් කරන්න",
+    "actual": "help me",
+    "type": "Commands",
+    "rationale": "Did not translate command phrase"
+  },
+  {
+    "tcid": "Neg_0004",
+    "length": "S",
+    "input": "hari honda",
+    "expected": "හරි හොඳ",
+    "actual": "hari honda",
+    "type": "Greetings",
+    "rationale": "Left in Romanized form"
+  },
+  {
+    "tcid": "Neg_0005",
+    "length": "S",
+    "input": "please call me",
+    "expected": "කරුණාකර මමට ඇමතුමක් කරන්න",
+    "actual": "please call me",
+    "type": "Requests",
+    "rationale": "English not transliterated"
+  },
+  {
+    "tcid": "Neg_0006",
+    "length": "S",
+    "input": "okk",
+    "expected": "හරි",
+    "actual": "okk",
+    "type": "Responses",
+    "rationale": "Slang response left untranslated"
+  },
+  {
+    "tcid": "Neg_0007",
+    "length": "S",
+    "input": "haha haha",
+    "expected": "හා හා",
+    "actual": "haha haha",
+    "type": "Repeated words",
+    "rationale": "Repeated laugh not converted"
+  },
+  {
+    "tcid": "Neg_0008",
+    "length": "S",
+    "input": "wow!!!",
+    "expected": "වෝ!!!",
+    "actual": "wow",
+    "type": "Punctuation",
+    "rationale": "Exclamation punctuation lost and not transliterated"
+  },
+  {
+    "tcid": "Neg_0009",
+    "length": "S",
+    "input": "kandha",
+    "expected": "කන්ධ",
+    "actual": "kandha",
+    "type": "Romanization variants",
+    "rationale": "Did not handle transliteration variant"
+  },
+  {
+    "tcid": "Neg_0010",
+    "length": "S",
+    "input": "I will come tomorrow",
+    "expected": "මම හෙට එනවා",
+    "actual": "I will come tomorrow",
+    "type": "English word insertions",
+    "rationale": "Left as English instead of transliteration"
+  },
+  {
+    "tcid": "Neg_0011",
+    "length": "S",
+    "input": "check email",
+    "expected": "ඊමේල් බලන්න",
+    "actual": "check email",
+    "type": "Multi-word English phrases",
+    "rationale": "Phrase not converted"
+  },
+  {
+    "tcid": "Neg_0012",
+    "length": "S",
+    "input": "wifi",
+    "expected": "වයිෆයි",
+    "actual": "wifi",
+    "type": "Digital terms",
+    "rationale": "Did not transliterate digital term"
+  },
+  {
+    "tcid": "Neg_0013",
+    "length": "S",
+    "input": "WhatsApp",
+    "expected": "වොට්ස්ඇප්",
+    "actual": "WhatsApp",
+    "type": "Platform/App names",
+    "rationale": "Platform name left in English"
+  },
+  {
+    "tcid": "Neg_0014",
+    "length": "S",
+    "input": "ASAP",
+    "expected": "ඒෑඑස්ඒපී",
+    "actual": "ASAP",
+    "type": "Abbreviations",
+    "rationale": "Acronym not handled"
+  },
+  {
+    "tcid": "Neg_0015",
+    "length": "S",
+    "input": "info",
+    "expected": "තොරතුරු",
+    "actual": "info",
+    "type": "Clipped forms",
+    "rationale": "Clipped word not expanded/transliterated"
+  },
+  {
+    "tcid": "Neg_0016",
+    "length": "S",
+    "input": "colombo",
+    "expected": "කොළඹ",
+    "actual": "colombo",
+    "type": "Place names",
+    "rationale": "Place name not transliterated"
+  },
+  {
+    "tcid": "Neg_0017",
+    "length": "S",
+    "input": "kamal",
+    "expected": "කමල්",
+    "actual": "kamal",
+    "type": "Person names",
+    "rationale": "Person name left in Roman script"
+  },
+  {
+    "tcid": "Neg_0018",
+    "length": "S",
+    "input": "100",
+    "expected": "100",
+    "actual": "one hundred",
+    "type": "Numbers",
+    "rationale": "System converted numerals to words incorrectly"
+  },
+  {
+    "tcid": "Neg_0019",
+    "length": "S",
+    "input": "$50",
+    "expected": "$50",
+    "actual": "දොලර් 50",
+    "type": "Currency",
+    "rationale": "Added currency words"
+  },
+  {
+    "tcid": "Neg_0020",
+    "length": "S",
+    "input": "9:30pm",
+    "expected": "9:30 ප.ව.",
+    "actual": "9.30 pm",
+    "type": "Time formats",
+    "rationale": "Time formatted incorrectly and not localized"
+  },
+  {
+    "tcid": "Neg_0021",
+    "length": "S",
+    "input": "2026-05-05",
+    "expected": "2026-05-05",
+    "actual": "May 5, 2026",
+    "type": "Dates",
+    "rationale": "Date output localized unexpectedly"
+  },
+  {
+    "tcid": "Neg_0022",
+    "length": "S",
+    "input": "5kg",
+    "expected": "5kg",
+    "actual": "5 කිලෝග්රෑම්",
+    "type": "Measurements",
+    "rationale": "Measurement units expanded incorrectly"
+  },
+  {
+    "tcid": "Neg_0023",
+    "length": "S",
+    "input": "kade","expected":"කඩේ","actual":"kade",
+    "type":"Slang",
+    "rationale":"Local slang not transliterated"
+  },
+  {
+    "tcid": "Neg_0024",
+    "length": "S",
+    "input": "@user123",
+    "expected": "@user123",
+    "actual": "user123",
+    "type": "Online identifiers",
+    "rationale": "At symbol removed"
+  },
+  {
+    "tcid": "Neg_0025",
+    "length": "S",
+    "input": ":)",
+    "expected": ":)",
+    "actual": "",
+    "type": "Emojis",
+    "rationale": "Emoji lost in translation output"
+  },
+  {
+    "tcid": "Neg_0026",
+    "length": "M",
+    "input": "mama ehema kiyala thiyenne nadda? oyage adahas monawada?",
+    "expected": "මම එහෙම කියලා තියෙන්නේ නැද්ද? ඔබගේ අදහස් මොනවාද?",
+    "actual": "mama ehema kiyala thiyenne nadda? oyage adahas monawada?",
+    "type": "Question forms",
+    "rationale": "Full sentence left in Roman script"
+  },
+  {
+    "tcid": "Neg_0027",
+    "length": "M",
+    "input": "send the file to me now",
+    "expected": "එම ගොනුව දැන් මට යවන්න",
+    "actual": "send the file to me now",
+    "type": "Commands",
+    "rationale": "Imperative phrase not transliterated"
+  },
+  {
+    "tcid": "Neg_0028",
+    "length": "M",
+    "input": "suba aluth avuruddak wewa",
+    "expected": "සුබ අලුත් අවුරුද්දක් වේවා",
+    "actual": "suba aluth avuruddak wewa",
+    "type": "Greetings",
+    "rationale": "Festive greeting left untranslated"
+  },
+  {
+    "tcid": "Neg_0029",
+    "length": "M",
+    "input": "please help me with this problem asap",
+    "expected": "කරුණාකර මේ ගැටලුව සඳහා වහාම සහාය කරන්න",
+    "actual": "please help me with this problem asap",
+    "type": "Requests",
+    "rationale": "Request remained in English"
+  },
+  {
+    "tcid": "Neg_0030",
+    "length": "M",
+    "input": "ok thanks bye",
+    "expected": "හරි, ස්තුතියි, බුද්ධි",
+    "actual": "ok thanks bye",
+    "type": "Responses",
+    "rationale": "Multiple short responses not converted"
+  },
+  {
+    "tcid": "Neg_0031",
+    "length": "M",
+    "input": "la la la la la",
+    "expected": "ලා ලා ලා ලා ලා",
+    "actual": "la la la la la",
+    "type": "Repeated words",
+    "rationale": "Repeated syllables left as-is"
+  },
+  {
+    "tcid": "Neg_0032",
+    "length": "M",
+    "input": "wait...what?!!",
+    "expected": " රැදී සිටින්න... මොකක්ද?!!",
+    "actual": "wait what",
+    "type": "Punctuation",
+    "rationale": "Mixed punctuation lost and English remained"
+  },
+  {
+    "tcid": "Neg_0033",
+    "length": "M",
+    "input": "thx",
+    "expected": "ස්තුතියි",
+    "actual": "thx",
+    "type": "Romanization variants",
+    "rationale": "Abbreviated roman form not handled"
+  },
+  {
+    "tcid": "Neg_0034",
+    "length": "M",
+    "input": "I can't open the attachment",
+    "expected": "මට පිට붙වූ ගොනුව විවෘත කළ නොහැක",
+    "actual": "I can't open the attachment",
+    "type": "English word insertions",
+    "rationale": "Mixed-language sentence left unchanged"
+  },
+  {
+    "tcid": "Neg_0035",
+    "length": "M",
+    "input": "download the PDF file",
+    "expected": "PDF ගොනුව බාගත කරන්න",
+    "actual": "download the PDF file",
+    "type": "Multi-word English phrases",
+    "rationale": "Phrase not transliterated"
+  },
+  {
+    "tcid": "Neg_0036",
+    "length": "M",
+    "input": "router not working",
+    "expected": "රුටර් ක්‍රියා නොකරයි",
+    "actual": "router not working",
+    "type": "Digital terms",
+    "rationale": "Technical term untranslated"
+  },
+  {
+    "tcid": "Neg_0037",
+    "length": "M",
+    "input": "facebook message",
+    "expected": "Facebook පණිවිඩයක්",
+    "actual": "facebook message",
+    "type": "Platform/App names",
+    "rationale": "App name not transliterated properly"
+  },
+  {
+    "tcid": "Neg_0038",
+    "length": "M",
+    "input": "FYI this is urgent",
+    "expected": "ඔබට දැනුම් දීමට, මෙය කදිමයි",
+    "actual": "FYI this is urgent",
+    "type": "Abbreviations",
+    "rationale": "Acronym left untranslated"
+  },
+  {
+    "tcid": "Neg_0039",
+    "length": "M",
+    "input": "info pls",
+    "expected": "තොරතුරු කරුණාකර",
+    "actual": "info pls",
+    "type": "Clipped forms",
+    "rationale": "Clipped ask not handled"
+  },
+  {
+    "tcid": "Neg_0040",
+    "length": "M",
+    "input": "galle fort is beautiful",
+    "expected": "ගාල්ල කොටුව සුන්දරය",
+    "actual": "galle fort is beautiful",
+    "type": "Place names",
+    "rationale": "Place name not transliterated"
+  },
+  {
+    "tcid": "Neg_0041",
+    "length": "M",
+    "input": "nimal said he'll come",
+    "expected": "නිමල් කියා තිබුණේ ඔහු එන බවයි",
+    "actual": "nimal said he'll come",
+    "type": "Person names",
+    "rationale": "Name kept in Roman script"
+  },
+  {
+    "tcid": "Neg_0042",
+    "length": "M",
+    "input": "there are 12 items",
+    "expected": "අයිතම 12ක් ඇත",
+    "actual": "there are twelve items",
+    "type": "Numbers",
+    "rationale": "Numbers spelled out in English"
+  },
+  {
+    "tcid": "Neg_0043",
+    "length": "M",
+    "input": "Rs.5000",
+    "expected": "රු.5000",
+    "actual": "රුපියල් 5000",
+    "type": "Currency",
+    "rationale": "Currency expanded into words"
+  },
+  {
+    "tcid": "Neg_0044",
+    "length": "M",
+    "input": "meet at 07:00",
+    "expected": "07:00 ට හමු වන්න",
+    "actual": "meet at 7 am",
+    "type": "Time formats",
+    "rationale": "Time normalized to English notation"
+  },
+  {
+    "tcid": "Neg_0045",
+    "length": "M",
+    "input": "01/06/2026",
+    "expected": "01/06/2026",
+    "actual": "June 1, 2026",
+    "type": "Dates",
+    "rationale": "Localized to English date format"
+  },
+  {
+    "tcid": "Neg_0046",
+    "length": "M",
+    "input": "20m",
+    "expected": "20m",
+    "actual": "20 මිනිත්තු",
+    "type": "Measurements",
+    "rationale": "Unit expanded into words"
+  },
+  {
+    "tcid": "Neg_0047",
+    "length": "M",
+    "input": "oya yanne da?",
+    "expected": "ඔයියා යන්නේ ද?",
+    "actual": "oya yanne da",
+    "type": "Slang",
+    "rationale": "Question punctuation missing and slang not handled"
+  },
+  {
+    "tcid": "Neg_0048",
+    "length": "M",
+    "input": "#topic trending",
+    "expected": "#topic ප්‍රවණයි",
+    "actual": "topic trending",
+    "type": "Online identifiers",
+    "rationale": "Hashtag symbol removed and left in English"
+  },
+  {
+    "tcid": "Neg_0049",
+    "length": "M",
+    "input": "😊👍",
+    "expected": "😊👍",
+    "actual": "",
+    "type": "Emojis",
+    "rationale": "Emojis not preserved"
+  },
+  {
+    "tcid": "Neg_0050",
+    "length": "L",
+    "input": "mama api samaga innawa kiyala mata nethiwa thiyenawa. mama ema deyak karanna yanne naha, eyage hithata hitapu de walata mama sammathi nowei. eka nisa mama penena widihata kiyanna yanawa. api mehema kiyala balamu. eyage adahas thama me widiyata thiyenne kiyala mama hondatama aharanaya karanawa. mama kiyanna yanawa, oyage sahayogayen mata pamanak wenas karanna puluwan",
+    "expected": "මම අපි සමඟ ඉන්නේ කියලා මට නොතිබේ. මම එම දෙයක් කරන්න යන්නේ නැහැ, එයාගේ හිතට හිටපු දේවලට මම සම්මතී නොවේ. ඒක නිසා මම පෙනෙන විදියට කියන්න යනවා. අපි මෙහෙම කියලා බලමු. එයාගේ අදහස් තමයි මේ විදියට තියෙන්නේ කියලා මම හොඳටම අහරණය කරනවා. මම කියන්න යනවා, ඔබගේ සහයෝගයෙන් මට පමණක් වෙනස් කරන්න පුළුවන්",
+    "actual": "mama api samaga innawa kiyala mata nethiwa thiyenawa. mama ema deyak karanna yanne naha, eyage hithata hitapu de walata mama sammathi nowei. eka nisa mama penena widihata kiyanna yanawa. api mehema kiyala balamu. eyage adahas thama me widiyata thiyenne kiyala mama hondatama aharanaya karanawa. mama kiyanna yanawa, oyage sahayogayen mata pamanak wenas karanna puluwan",
+    "type": "Slang",
+    "rationale": "Long text not transliterated at all"
+  }
+]
