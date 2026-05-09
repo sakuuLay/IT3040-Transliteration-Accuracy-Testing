@@ -39,7 +39,7 @@
     "tcid": "Neg_0005",
     "length": "S",
     "input": "please call me",
-    "expected": "කරුණාකර මමට ඇමතුමක් කරන්න",
+    "expected": "කරුණාකර මට ඇමතුමක් කරන්න",
     "actual": "please call me",
     "type": "Requests",
     "rationale": "English not transliterated"
@@ -48,46 +48,46 @@
     "tcid": "Neg_0006",
     "length": "S",
     "input": "okk",
-    "expected": "හරි",
-    "actual": "okk",
+    "expected": "okk",
+    "actual": "ඔක්කොම",
     "type": "Responses",
-    "rationale": "Slang response left untranslated"
+    "rationale": "Slang response not handled and expanded wrongly into a different word in Sinhala"
   },
   {
     "tcid": "Neg_0007",
     "length": "S",
-    "input": "haha haha",
-    "expected": "හා හා",
-    "actual": "haha haha",
+    "input": "amo amo",
+    "expected": "අමෝ අමෝ",
+    "actual": "අම්මෝ අම්මෝ",
     "type": "Repeated words",
-    "rationale": "Repeated laugh not converted"
+    "rationale": "Did not handle romanized repeated words properly and added extra 'm' sound"
   },
   {
     "tcid": "Neg_0008",
     "length": "S",
-    "input": "wow!!!",
-    "expected": "වෝ!!!",
-    "actual": "wow",
+    "input": "wooooooooow!!!",
+    "expected": "වූ......ව්!!!",
+    "actual": "වාව්!!!",
     "type": "Punctuation",
-    "rationale": "Exclamation punctuation lost and not transliterated"
+    "rationale": "Did not handle repeated letters and punctuation properly, resulting in a different word and loss of emphasis"
   },
   {
     "tcid": "Neg_0009",
     "length": "S",
-    "input": "kandha",
-    "expected": "කන්ධ",
-    "actual": "kandha",
+    "input": "mmmmmh! hari mm karnnm.",
+    "expected": "ම්ම්ම්ම්ම්! හරි මම කරන්නම්.",
+    "actual": "ම්ම්ම්ම්ම්! හරි මන් කරන්නම්.",
     "type": "Romanization variants",
-    "rationale": "Did not handle transliteration variant"
+    "rationale": "Did not handle romanized variants of 'm' sound properly, resulting in a different word in Sinhala"
   },
   {
     "tcid": "Neg_0010",
-    "length": "S",
-    "input": "I will come tomorrow",
-    "expected": "මම හෙට එනවා",
-    "actual": "I will come tomorrow",
-    "type": "English word insertions",
-    "rationale": "Left as English instead of transliteration"
+    "length": "M",
+    "input": "subma suba upan dnyak wewaa......!",
+    "expected": "සුභම සුබ උපන් දිනයක් වේවා..!",
+    "actual": "සුභම සුබ උපන් ධ්නයක් වේවා......!",
+    "type": "Greetings",
+    "rationale": "Did not handle romanized greeting properly, resulting in a different word in Sinhala and inconsistent punctuation handling"
   },
   {
     "tcid": "Neg_0011",
@@ -441,10 +441,10 @@
   {
     "tcid": "Neg_0050",
     "length": "L",
-    "input": "mama api samaga innawa kiyala mata nethiwa thiyenawa. mama ema deyak karanna yanne naha, eyage hithata hitapu de walata mama sammathi nowei. eka nisa mama penena widihata kiyanna yanawa. api mehema kiyala balamu. eyage adahas thama me widiyata thiyenne kiyala mama hondatama aharanaya karanawa. mama kiyanna yanawa, oyage sahayogayen mata pamanak wenas karanna puluwan",
-    "expected": "මම අපි සමඟ ඉන්නේ කියලා මට නොතිබේ. මම එම දෙයක් කරන්න යන්නේ නැහැ, එයාගේ හිතට හිටපු දේවලට මම සම්මතී නොවේ. ඒක නිසා මම පෙනෙන විදියට කියන්න යනවා. අපි මෙහෙම කියලා බලමු. එයාගේ අදහස් තමයි මේ විදියට තියෙන්නේ කියලා මම හොඳටම අහරණය කරනවා. මම කියන්න යනවා, ඔබගේ සහයෝගයෙන් මට පමණක් වෙනස් කරන්න පුළුවන්",
-    "actual": "mama api samaga innawa kiyala mata nethiwa thiyenawa. mama ema deyak karanna yanne naha, eyage hithata hitapu de walata mama sammathi nowei. eka nisa mama penena widihata kiyanna yanawa. api mehema kiyala balamu. eyage adahas thama me widiyata thiyenne kiyala mama hondatama aharanaya karanawa. mama kiyanna yanawa, oyage sahayogayen mata pamanak wenas karanna puluwan",
-    "type": "Slang",
-    "rationale": "Long text not transliterated at all"
+    "input": "eyaava mata hamba una dhavasema mage hitha eyaa gaavata giyaa eeth mage yaaluvek eyaath ekka yaaluvenna haedhuvee man ekkata kaemathi unee naee kohoma hari man eyaava magee paeththata harava ganna uthsaha karee man ee dhee kohoma hari karaa man eyaagen yaalu venna ahuvaa eyaa eyaa mata kaemathii kiyala mata tikak dhaenuna man venadhatath vaediya uthsaha karaa eeth eyaata mul dhavas vala magen dhurata yanna eka eka heethuu kivvaa",
+    "expected": "එයාව මට හම්බ උන දවසෙම මගේ හිත එයා ගාවට ගියා. ඒත් මගේ යාලුවෙක් එයාත් එක්ක යාලුවෙන්න හැදුවේ. මං ඒකට කැමති උනේ නෑ. කොහොම හරි මං එයාව මගේ පැත්තට හරවා ගන්න උත්සාහ කරේ. මං ඒ දේ කොහොම හරි කරා මං එයාගෙන්‍යාලු වෙන්න ඇහුවා. එයා මට කැමතියි කියලා මට ටිකක් දැනුණා මං වෙනධාටත් වැඩිය උත්සාහ කරා ඒත් එයාට මුල් දවස් වල මගෙන් දුරට යන්න එක එක හීතුව කිව්වා.",
+    "actual": "එයාව මට හම්බ උන දවසෙම මගේ හිත එයා ගාවට ගියා ඒත් මගේ යාලුවෙක් එයාත් එක්ක යාලුවෙන්න හැදුවේ මං එක්කට කැමති උනේ නෑ කොහොම හරි මං එයාව මගේ පැත්තට හරවා ගන්න උත්සාහ කාරී මං ඒ දේ කොහොම හරි කරා මං එයාගෙන්‍යාලු වෙන්න අහුවා එයා එයා මට කැමතියි කියලා මට ටිකක් දැනුණා මං වෙනදාටත් වැඩිය උත්සාහ කරා ඒත් එයාට මුල් දවස් වල මගෙන් දුරට යන්න එක එක හීතු කිව්වා",
+    "type": "Long informal text",
+    "rationale": "Long informal text with slang and colloquial expressions not handled properly, resulting in loss of meaning and nuances in Sinhala"
   }
 ]
