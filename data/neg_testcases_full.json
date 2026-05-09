@@ -2,38 +2,38 @@
   {
     "tcid": "Neg_0001",
     "length": "S",
-    "input": "oya kohomada",
-    "expected": "ඔයා කොහොමද?",
-    "actual": "ඔයා කොහොමද",
-    "type": "Question forms",
-    "rationale": "Missing question mark"
+    "input": "mama tea bonna kaemathii.",
+    "expected": "මම තේ බොන්න කැමතී.",
+    "actual": "මම ටී බොන්න කැමතියි.",
+    "type": "Responses",
+    "rationale": "No translated and unnecessary addition of 'යි' at the end"
   },
   {
     "tcid": "Neg_0002",
     "length": "S",
-    "input": "kohomada oyage name",
-    "expected": "ඔයාගේ නම කොහොමද?",
-    "actual": "ඔයාගේ නම කොහොමද",
+    "input": "oyage nme akuru thiyenne kohomada",
+    "expected": "ඔයාගේ නමේ අකුරු තියෙන්නේ කොහොමද?",
+    "actual": "ඔයාගේ නම්මේ අකුරු තියෙන්නේ කොහොමද",
     "type": "Question forms",
     "rationale": "Missing punctuation and wrong word order handling"
   },
   {
     "tcid": "Neg_0003",
     "length": "S",
-    "input": "help me",
-    "expected": "උදව් කරන්න",
-    "actual": "help me",
+    "input": "wrn bn meheta",
+    "expected": "වරෙන් බන් මෙහෙට",
+    "actual": "වරන් බන් මෙහෙට",
     "type": "Commands",
-    "rationale": "Did not translate command phrase"
+    "rationale": "Did not handle romanized command properly"
   },
   {
     "tcid": "Neg_0004",
     "length": "S",
-    "input": "hari honda",
-    "expected": "හරි හොඳ",
-    "actual": "hari honda",
-    "type": "Greetings",
-    "rationale": "Left in Romanized form"
+    "input": "please udw krhnko",
+    "expected": "please උදව් කරහන්කෝ",
+    "actual": "please, උදව් කරහන්කෝ",
+    "type": "Requests",
+    "rationale": "Mixed language request not fully transliterated and punctuation handling inconsistent"
   },
   {
     "tcid": "Neg_0005",
